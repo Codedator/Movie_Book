@@ -1,0 +1,15 @@
+.city_drop{
+    max-height: 400px;
+    max-width: 200px;
+    overflow-y: auto;
+}
+
+.btn-danger{
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d9534f;
+}
+
+.bg-base-nav{
+    background-color: #d9534f;
+}

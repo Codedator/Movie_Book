@@ -1,0 +1,37 @@
+Movie Ticket Booking System (Database Design):
+
+1. User -
+	
+	User Id           - CharacterField(PK)
+	User Password     - CharacterField
+	User Name         - CharacterField
+	User Phone Number - IntegerField
+	User Email Id     - EmailField
+
+2. City - 
+	
+	City Id           - CharacterField(PK)
+	Name              - CharacterField
+	State             - CharacterField
+	Pin Code          - IntegerField
+
+3. CinemaHall - 
+
+	CinemaHall Id     - CharacterField(PK)
+	Name              - CharacterField
+	Screens           - IntegerField
+	City Id           - CharacterField(FK)
+
+4. Screen -
+
+	Screen Id         - CharacterField(PK)
+	Name              - CharacterField
+	Seats             - IntegerField
+	CinemaHall Id     - CharacterField(FK)
+
+5. Seat -
+
+	Seat Id           - CharacterField(PK)
+	Seat Number       - CharacterField
+	Seat Type         - IntegerField
+	Screen Id         - CharacterField(FK)
